@@ -1,6 +1,7 @@
 {
   "name": "@tummycrypt/tinyland-calendar",
-  "version": "0.2.3",
+  "version": "1.0.0",
+  "private": true,
   "description": "Calendar system with CalDAV, iCal, RRULE, and timezone support",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,31 +22,26 @@
     "clean": "rm -rf dist",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "check:package": "publint",
-    "prepublishOnly": "pnpm build && pnpm check:package"
+    "check:package": "publint"
   },
   "license": "Zlib AND LicenseRef-Tinyland-Proprietary",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "vitest": "^4.0.0",
-    "publint": "^0.3.18"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "@types/node": "^22.0.0",
+    "publint": "^0.3.18",
+    "typescript": "7.0.2",
+    "vitest": "5.0.3"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyland-inc/tinyland-calendar.git"
+    "url": "git+https://github.com/xoxd-ai/tinyland-calendar.git"
   },
   "packageManager": "pnpm@10.13.1",
-  "homepage": "https://github.com/tinyland-inc/tinyland-calendar",
+  "homepage": "https://github.com/xoxd-ai/tinyland-calendar",
   "bugs": {
-    "url": "https://github.com/tinyland-inc/tinyland-calendar/issues"
+    "url": "https://github.com/xoxd-ai/tinyland-calendar/issues"
   }
 }

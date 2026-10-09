@@ -45,7 +45,7 @@ npm_package(
         ":tinyland_calendar",
     ],
     package = "@tummycrypt/tinyland-calendar",
-    version = "0.2.3",
+    version = "1.0.0",
     visibility = ["//visibility:public"],
 )
 
@@ -53,6 +53,7 @@ vitest_bin.vitest_test(
     name = "test",
     data = [
         ":node_modules",
+        "package.json",
         "tsconfig.json",
         ":node_modules/vitest",
         "vitest.config.ts",
