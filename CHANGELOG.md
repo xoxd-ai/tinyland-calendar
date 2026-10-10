@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Dev toolchain: `vite` 8.3.3 is now an exact devDependency (RU1/RU5), so
+  vitest 5.0.3 runs on the estate Vite instead of the transitively resolved
+  8.0.10. No runtime or package change; no release needed.
+
 ## 1.0.0 (2026-10-09)
 
 Major release under the 2026-10-08 estate uplift (RU1, RU6, RU8, RU10, RU13).
